@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Number System Converter - Rooots</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: rgba(0,0,0,0.75);
+      padding: 25px 35px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00aaff;
+      color: #b0e0ff;
+      animation: fadeIn 1s ease-in;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin: 15px 0 8px;
+      text-align: left;
+    }
+    select, input {
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1em;
+      border-radius: 10px;
+      border: none;
+      margin-bottom: 15px;
+      outline: none;
+    }
+    button {
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1.2em;
+      width: 100%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0077cc;
+    }
+    #result {
+      margin-top: 25px;
+      background: #004466;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1.3em;
+      word-wrap: break-word;
+      min-height: 50px;
+    }
+    nav {
+      max-width: 500px;
+      margin: 10px auto 0;
+      display: flex;
+      justify-content: flex-start;
+    }
+    nav a {
+      color: #00aaff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">&larr; Main Menu</a>
+  </nav>
+
+  <div class="container">
+    <h1>Number System Converter</h1>
+
+    <label for="inputSystem">Input Number System:</label>
+    <select id="inputSystem">
+      <option value="binary">Binary</option>
+      <option value="decimal" selected>Decimal</option>
+      <option value="hexadecimal">Hexadecimal</option>
+      <option value="octal">Octal</option>
+      <option value="bcd">BCD</option>
+    </select>
+
+    <label for="outputSystem">Output Number System:</label>
+    <select id="outputSystem">
+      <option value="binary">Binary</option>
+      <option value="decimal" selected>Decimal</option>
+      <option value="hexadecimal">Hexadecimal</option>
+      <option value="octal">Octal</option>
+      <option value="bcd">BCD</option>
+    </select>
+
+    <label for="inputNumber">Enter Number:</label>
+    <input type="text" id="inputNumber" placeholder="Enter number here" />
+
+    <button id="convertBtn">Convert</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="converter.js"></script>
+</body>
+</html>
