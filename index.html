@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rooots Number Systems - Login & Menu</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="login-container" id="loginBox">
+    <h2>Rooots Number Systems</h2>
+    <form id="loginForm">
+      <input type="text" id="username" placeholder="Enter username" required />
+      <input type="password" id="password" placeholder="Enter password" required />
+      <button type="submit">Login / Signup</button>
+    </form>
+    <p id="loginMessage"></p>
+  </div>
+
+  <div class="menu-container hidden" id="menuBox">
+    <h2>Main Menu</h2>
+    <p>Welcome, <span id="userDisplay"></span>!</p>
+    <ul class="menu-list">
+      <li><button data-page="binary.html">Binary Numbers</button></li>
+      <li><button data-page="decimal.html">Decimal Numbers</button></li>
+      <li><button data-page="hexadecimal.html">Hexadecimal Numbers</button></li>
+      <li><button data-page="octal.html">Octal Numbers</button></li>
+      <li><button data-page="bcd.html">BCD (Binary Coded Decimal)</button></li>
+      <li><button data-page="converter.html">Number System Converter</button></li>
+      <li><button data-page="arithmetic.html">Arithmetic Operations</button></li>
+    </ul>
+    <button id="logoutBtn" class="logout-btn">Logout</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
