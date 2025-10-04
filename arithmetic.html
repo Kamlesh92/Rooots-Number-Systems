@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Arithmetic Operations - Rooots</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .container {
+      max-width: 500px;
+      margin: 40px auto;
+      background: rgba(0,0,0,0.75);
+      padding: 25px 35px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px #00aaff;
+      color: #b0e0ff;
+      animation: fadeIn 1s ease-in;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: 600;
+      display: block;
+      margin: 15px 0 8px;
+      text-align: left;
+    }
+    select, input {
+      width: 100%;
+      padding: 12px;
+      font-size: 1.1em;
+      border-radius: 10px;
+      border: none;
+      margin-bottom: 15px;
+      outline: none;
+    }
+    button {
+      background-color: #00aaff;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1.2em;
+      width: 100%;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #0077cc;
+    }
+    #result {
+      margin-top: 25px;
+      background: #004466;
+      padding: 15px;
+      border-radius: 12px;
+      font-size: 1.3em;
+      word-wrap: break-word;
+      min-height: 50px;
+    }
+    nav {
+      max-width: 500px;
+      margin: 10px auto 0;
+      display: flex;
+      justify-content: flex-start;
+    }
+    nav a {
+      color: #00aaff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">&larr; Main Menu</a>
+  </nav>
+
+  <div class="container">
+    <h1>Arithmetic Operations</h1>
+
+    <label for="arithSystem">Number System:</label>
+    <select id="arithSystem">
+      <option value="binary">Binary</option>
+      <option value="decimal" selected>Decimal</option>
+      <option value="hexadecimal">Hexadecimal</option>
+      <option value="octal">Octal</option>
+    </select>
+
+    <label for="operation">Operation:</label>
+    <select id="operation">
+      <option value="add">Addition (+)</option>
+      <option value="subtract">Subtraction (-)</option>
+      <option value="multiply">Multiplication (×)</option>
+      <option value="divide">Division (÷)</option>
+    </select>
+
+    <label for="num1">First Number:</label>
+    <input type="text" id="num1" placeholder="Enter first number" />
+
+    <label for="num2">Second Number:</label>
+    <input type="text" id="num2" placeholder="Enter second number" />
+
+    <button id="calcBtn">Calculate</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="arithmetic.js"></script>
+</body>
+</html>
