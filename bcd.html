@@ -1,1 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BCD (Binary Coded Decimal) - Rooots</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .content {
+      max-width: 700px;
+      margin: 30px auto;
+      background: rgba(0,0,0,0.75);
+      padding: 25px 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #00aaff;
+      color: #b0e0ff;
+      font-size: 1.05em;
+      line-height: 1.6;
+      animation: fadeIn 1.2s ease-in;
+    }
+    nav {
+      max-width: 700px;
+      margin: 20px auto;
+      display: flex;
+      justify-content: space-between;
+      color: #00aaff;
+      font-weight: 600;
+    }
+    nav a {
+      color: #00aaff;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+      border: 1px solid transparent;
+    }
+    nav a:hover {
+      background: #0056b3;
+      border: 1px solid #00aaff;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="octal.html">&larr; Previous: Octal</a>
+    <a href="converter.html">Next: Converter &rarr;</a>
+  </nav>
+
+  <div class="content">
+    <h1>Binary Coded Decimal (BCD)</h1>
+    <p><strong>Definition:</strong> BCD is a class of binary encodings for decimal numbers where each digit is represented by its own binary sequence.</p>
+    <p><strong>Base:</strong> N/A (encoding format)</p>
+    <ul>
+      <li>Each decimal digit (0-9) is represented by its 4-bit binary equivalent.</li>
+      <li>Example: Decimal 259 → BCD 0010 0101 1001</li>
+      <li>Used in digital systems where numeric values must be displayed.</li>
+      <li>Simplifies the interface between decimal and binary systems.</li>
+    </ul>
+    <h3>Highlights</h3>
+    <ul>
+      <li>Helps computers handle decimal digits more easily.</li>
+      <li>Enables efficient decimal arithmetic operations.</li>
+      <li>Common in calculators and digital clocks.</li>
+      <li>Not a positional number system but a hybrid encoding scheme.</li>
+    </ul>
+  </div>
+</body>
+</html>
 
